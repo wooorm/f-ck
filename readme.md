@@ -1,6 +1,6 @@
 # f-ck [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-Clean-up cuss (`c*ss`, `c**s`, `@#$%`) words.
+Clean-up [cuss][] (`c*ss`, `c**s`, `@#$%`) words.
 
 > Not affiliated with Football Club København.
 
@@ -67,3 +67,5 @@ Essentially, repeats `pattern` for `value` (when `number`) /
 [author]: http://wooorm.com
 
 [grawlix]: https://en.wikipedia.org/wiki/The_Lexicon_of_Comicana
+
+[cuss]: https://github.com/wooorm/cuss
