@@ -1,6 +1,6 @@
 # f-ck [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-Clean cuss (`c*ss`, `c**s`, `@#$%`) words.
+Clean-up cuss (`c*ss`, `c**s`, `@#$%`) words.
 
 > Not affiliated with Football Club København.
 
