@@ -4,11 +4,11 @@
 var repeat = require('repeat-string');
 
 /* Expose. */
-module.exports = exports = vowel;
+module.exports = vowel;
 
-exports.vowel = vowel;
-exports.inner = inner;
-exports.grawlix = grawlix;
+vowel.vowel = vowel;
+vowel.inner = inner;
+vowel.grawlix = grawlix;
 
 /* Methods. */
 var floor = Math.floor;
