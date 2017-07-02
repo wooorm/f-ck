@@ -1,19 +1,15 @@
 'use strict';
 
-/* Dependencies. */
 var repeat = require('repeat-string');
 
-/* Expose. */
 module.exports = vowel;
 
 vowel.vowel = vowel;
 vowel.inner = inner;
 vowel.grawlix = grawlix;
 
-/* Methods. */
 var floor = Math.floor;
 
-/* Constants. */
 var DEFAULT = '*';
 var GRAWLIX = '@#$%!&?';
 var VOWELS = /[aeiouy]/g;

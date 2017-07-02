@@ -1,10 +1,8 @@
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
 var fck = require('./');
 
-/* Tests. */
 test('fck', function (t) {
   t.test('.vowel', function (st) {
     st.equal(fck.vowel('butt'), 'b*tt');
