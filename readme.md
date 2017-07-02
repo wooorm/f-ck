@@ -46,6 +46,13 @@ Sanitise `value` using a [grawlix][] pattern (default: `'@#$%!&?'`).
 Essentially, repeats `pattern` for `value` (when `number`) /
 `value.length` (when `string`) characters.
 
+## Related
+
+*   [`profanities`](https://github.com/wooorm/profanities)
+    — List of (possible) English profane words
+*   [`cuss`][cuss]
+    — Map of English profane words to a rating of sureness
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
