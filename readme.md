@@ -48,7 +48,7 @@ Essentially, repeats `pattern` for `value` (when `number`) /
 
 ## Related
 
-*   [`profanities`](https://github.com/wooorm/profanities)
+*   [`profanities`][profanities]
     — List of (possible) English profane words
 *   [`cuss`][cuss]
     — Map of English profane words to a rating of sureness
@@ -75,4 +75,6 @@ Essentially, repeats `pattern` for `value` (when `number`) /
 
 [grawlix]: https://en.wikipedia.org/wiki/The_Lexicon_of_Comicana
 
-[cuss]: https://github.com/wooorm/cuss
+[cuss]: https://github.com/words/cuss
+
+[profanities]: https://github.com/words/profanities
