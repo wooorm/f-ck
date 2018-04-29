@@ -5,3 +5,4 @@ coverage/
 node_modules/
 f-ck.js
 f-ck.min.js
+yarn.lock
