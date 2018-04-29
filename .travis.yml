@@ -4,20 +4,13 @@ node_js:
 - '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: ooNL4LzTr86h0Wt7teQzVQUmGyfcLp+aPqBPyhnLl5PW0Ru2OCYGqcF6zqmaWhkRHBZ/1XJuR8dry9UkKyjXSuD2D91jzZsEEgGBy2e+y5FgpvoXUZJ8mQ3LqHIY19DhgsPAUKXItHTquhB+5a67CiVCwioV4le+KHc6y74AFC0iFXFvdhJZtLjFGhS4W9D8Vr8hH9PpD32i+MNuivAqNr+praelAyD9H5x8XCgkbLeH25LVrC+uYdgV9F8cwSEy50T/kyUIdNc/3Syd7br+jhfhqfnu/hwftYfuGlQ9LDVXBhfBoG3drzcLTFd65tw63efZt2uLxDRSRB9IvJPBeS6YyLPvjmH6xU+XCfOYAqNjvaN78mpl58F3cg3SWlTOxJ3kzLtHPrGP7TRQ9P0lHEgjXB4YH+VGqTcr4ktoMZJAnA58xfXArlVDBzfRNLaXneBG+ADFj3qg5FQyE1Xb89ajnG4lqoOxdoPUf+d/c8KcQE4SSVPokfghGlasb7jICYqycGs2me2JMSChd1OO3w1/Yhnc1qJgD/fdUmkJokoKn7M3rOxf3qh3DZy4grxYGzoRnpriOO7YFLTgdBiTnDA3uzz1rqvNk8i9qFWAou5DVEIvy4hmYcvxWg/JTf5RZjrvpoH2Lz1DQZwpMvy3ZyIeVuLT5pL/t1jtZ5vRRwQ=
-    on:
-      tags: true
-      node: '9.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: mhNQ/UtUfGzJcKsASPlFo3t7/we/pyBBuNc6t6Qr0YtT9VbKV6R1bnbHvu1rj6TLTR46CdYycR43lcVXkxssHkGxEbVZTR6NNsmHtq6yO7v1YV4AxUDchtNTgPbfposxrjLJrXlMZYTmNFY+entMrirwzDEJXkLVb1eTyOyb+8IpUcX4I2Luo30FducKVBwB2b79q88VeModN2pxKZdZN5ipZCVWAteFiRIUpTGHzcbUM7qJI2coZoXdoz4TyJFRaBHYnASFtcqEc+tep1K6Y00izwFcpUvPK0eJddFp0ZyPd3tkeKGjloLKk5NmI2aIYmVRLGugMyLtRZddTWRH4rAP8Ivv3UsFjJ76VCPjwUj8DyT+k1Xf2Zl1wm4qOAtQA9YifreKD64tFYiixc9D5KUqgKA1OmtDoSLID2gx72dOqlT1SGYo1zl4UevN2k4ONx92xqzd3DjkrLN596Tijyme9K4YmG1l/ZnPPqfdoXaZAtgiTD6MiYMHTNZLkLHy5EKJNb/2JVlGwg+ugHkUnaNwM+PxqQMfHHho5DyUaj8J1UXE/hWvwW2cZr8/EcCWsOI8PxfHy4ymJvv3F7EtJtpEHRGjk68Fw/6c4rAiqytMCFHKM/fH4DjUSq2mcl4Cm2CIHOK0fykq7fNahdU/ll0dtpKVbg9olaJnlke9qAU=
-    file:
-      - "f-ck.js"
-      - "f-ck.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: mhNQ/UtUfGzJcKsASPlFo3t7/we/pyBBuNc6t6Qr0YtT9VbKV6R1bnbHvu1rj6TLTR46CdYycR43lcVXkxssHkGxEbVZTR6NNsmHtq6yO7v1YV4AxUDchtNTgPbfposxrjLJrXlMZYTmNFY+entMrirwzDEJXkLVb1eTyOyb+8IpUcX4I2Luo30FducKVBwB2b79q88VeModN2pxKZdZN5ipZCVWAteFiRIUpTGHzcbUM7qJI2coZoXdoz4TyJFRaBHYnASFtcqEc+tep1K6Y00izwFcpUvPK0eJddFp0ZyPd3tkeKGjloLKk5NmI2aIYmVRLGugMyLtRZddTWRH4rAP8Ivv3UsFjJ76VCPjwUj8DyT+k1Xf2Zl1wm4qOAtQA9YifreKD64tFYiixc9D5KUqgKA1OmtDoSLID2gx72dOqlT1SGYo1zl4UevN2k4ONx92xqzd3DjkrLN596Tijyme9K4YmG1l/ZnPPqfdoXaZAtgiTD6MiYMHTNZLkLHy5EKJNb/2JVlGwg+ugHkUnaNwM+PxqQMfHHho5DyUaj8J1UXE/hWvwW2cZr8/EcCWsOI8PxfHy4ymJvv3F7EtJtpEHRGjk68Fw/6c4rAiqytMCFHKM/fH4DjUSq2mcl4Cm2CIHOK0fykq7fNahdU/ll0dtpKVbg9olaJnlke9qAU=
+  file:
+    - "f-ck.js"
+    - "f-ck.min.js"
+  on:
+    tags: true
+    node: '9.0'
