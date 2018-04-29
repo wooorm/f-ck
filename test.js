@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var fck = require('./');
+var fck = require('.');
 
 test('fck', function (t) {
   t.test('.vowel', function (st) {
