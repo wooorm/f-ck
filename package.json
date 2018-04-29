@@ -15,7 +15,7 @@
     "word",
     "grawlix"
   ],
-  "repository": "https://github.com/wooorm/f-ck",
+  "repository": "wooorm/f-ck",
   "bugs": "https://github.com/wooorm/f-ck/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
