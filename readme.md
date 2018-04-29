@@ -15,15 +15,15 @@ npm install f-ck
 ## Usage
 
 ```js
-var fck = require('f-ck');
+var fck = require('f-ck')
 
-console.log(fck('butt')); //=> 'b*tt'
-console.log(fck.vowel('butt')); //=> 'b*tt'
-console.log(fck.inner('butt')); //=> 'b**t'
-console.log(fck.grawlix('butt')); //=> '@#$%'
-console.log(fck.grawlix(7)); //=> '@#$%!&?'
+console.log(fck('butt')) // => 'b*tt'
+console.log(fck.vowel('butt')) // => 'b*tt'
+console.log(fck.inner('butt')) // => 'b**t'
+console.log(fck.grawlix('butt')) // => '@#$%'
+console.log(fck.grawlix(7)) // => '@#$%!&?'
 
-console.log(fck('butt', '-')); //=> 'b-tt'
+console.log(fck('butt', '-')) // => 'b-tt'
 ```
 
 ## API
