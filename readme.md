@@ -71,7 +71,7 @@ Essentially, repeats `pattern` for `value` (when `number`) /
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [grawlix]: https://en.wikipedia.org/wiki/The_Lexicon_of_Comicana
 
