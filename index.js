@@ -14,12 +14,12 @@ var defaultCharacter = '*'
 var grawlixPattern = '@#$%!&?'
 var vowels = /[aeiouy]/g
 
-/* `butt` > `b*tt` */
+// `butt` > `b*tt`
 function vowel(value, character) {
   return value.replace(vowels, character || defaultCharacter)
 }
 
-/* `butt` > `b**t` */
+// `butt` > `b**t`
 function inner(value, character) {
   if (value.length <= 2) {
     return value
@@ -32,7 +32,7 @@ function inner(value, character) {
   )
 }
 
-/* `butt` > `@#$%` */
+// `butt` > `@#$%`
 function grawlix(value, pattern) {
   var chars = pattern || grawlixPattern
   var length = typeof value === 'number' ? value : value.length
