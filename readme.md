@@ -1,4 +1,9 @@
-# f-ck [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# f-ck
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Clean-up [cuss][] (`c*ss`, `c**s`, `@#$%`) words.
 
@@ -59,13 +64,21 @@ Essentially, repeats `pattern` for `value` (when `number`) /
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/f-ck.svg
+[build-badge]: https://img.shields.io/travis/wooorm/f-ck.svg
 
-[travis]: https://travis-ci.org/wooorm/f-ck
+[build]: https://travis-ci.org/wooorm/f-ck
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/f-ck.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/f-ck.svg
 
-[codecov]: https://codecov.io/github/wooorm/f-ck
+[coverage]: https://codecov.io/github/wooorm/f-ck
+
+[downloads-badge]: https://img.shields.io/npm/dm/f-ck.svg
+
+[downloads]: https://www.npmjs.com/package/f-ck
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/f-ck.svg
+
+[size]: https://bundlephobia.com/result?p=f-ck
 
 [npm]: https://docs.npmjs.com/cli/install
 
