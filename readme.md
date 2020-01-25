@@ -9,15 +9,15 @@ Clean-up [cuss][] (`c*ss`, `c**s`, `@#$%`) words.
 
 > Not affiliated with Football Club København.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install f-ck
 ```
 
-## Usage
+## Use
 
 ```js
 var fck = require('f-ck')
@@ -37,19 +37,19 @@ console.log(fck('butt', '-')) // => 'b-tt'
 
 ### `fck.vowel(value[, character])`
 
-Sanitise `value` by replacing vowels in `value` with `character`
-(default: `'*'`).
+Sanitize `value` by replacing vowels in `value` with `character` (default:
+`'*'`).
 
 ### `fck.inner(value[, character])`
 
-Sanitise `value` by replacing all characters except the first and last
-in `value` with `character` (default: `'*'`).
+Sanitize `value` by replacing all characters except the first and last in
+`value` with `character` (default: `'*'`).
 
 ### `fck.grawlix(value[, pattern])`
 
-Sanitise `value` using a [grawlix][] pattern (default: `'@#$%!&?'`).
-Essentially, repeats `pattern` for `value` (when `number`) /
-`value.length` (when `string`) characters.
+Sanitize `value` using a [grawlix][] pattern (default: `'@#$%!&?'`).
+Essentially, repeats `pattern` for `value` (when `number`) / `value.length`
+(when `string`) characters.
 
 ## Related
 
