@@ -64,9 +64,9 @@ Essentially, repeats `pattern` for `value` (when `number`) / `value.length`
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/f-ck.svg
+[build-badge]: https://github.com/wooorm/f-ck/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/f-ck
+[build]: https://github.com/wooorm/f-ck/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/f-ck.svg
 
