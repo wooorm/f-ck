@@ -38,17 +38,17 @@ console.log(vowel('butt', '-')) // => 'b-tt'
 This package exports the following identifiers: `vowel`, `inner`, and `grawlix`.
 There is no default export.
 
-### `fck.vowel(value[, character])`
+### `vowel(value[, character])`
 
 Sanitize `value` by replacing vowels in `value` with `character` (default:
 `'*'`).
 
-### `fck.inner(value[, character])`
+### `inner(value[, character])`
 
 Sanitize `value` by replacing all characters except the first and last in
 `value` with `character` (default: `'*'`).
 
-### `fck.grawlix(value[, pattern])`
+### `grawlix(value[, pattern])`
 
 Sanitize `value` using a [grawlix][] pattern (default: `'@#$%!&?'`).
 Essentially, repeats `pattern` for `value` (when `number`) or `value.length`
