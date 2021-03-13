@@ -11,6 +11,9 @@ Clean-up [cuss][] (`c*ss`, `c**s`, `@#$%`) words.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -20,20 +23,20 @@ npm install f-ck
 ## Use
 
 ```js
-var fck = require('f-ck')
+import {vowel, inner, grawlix} = require('f-ck')
 
-console.log(fck('butt')) // => 'b*tt'
-console.log(fck.vowel('butt')) // => 'b*tt'
-console.log(fck.inner('butt')) // => 'b**t'
-console.log(fck.grawlix('butt')) // => '@#$%'
-console.log(fck.grawlix(7)) // => '@#$%!&?'
+console.log(vowel('butt')) // => 'b*tt'
+console.log(inner('butt')) // => 'b**t'
+console.log(grawlix('butt')) // => '@#$%'
+console.log(grawlix(7)) // => '@#$%!&?'
 
-console.log(fck('butt', '-')) // => 'b-tt'
+console.log(vowel('butt', '-')) // => 'b-tt'
 ```
 
 ## API
 
-### `fck(value[, character])`
+This package exports the following identifiers: `vowel`, `inner`, and `grawlix`.
+There is no default export.
 
 ### `fck.vowel(value[, character])`
 
@@ -48,7 +51,7 @@ Sanitize `value` by replacing all characters except the first and last in
 ### `fck.grawlix(value[, pattern])`
 
 Sanitize `value` using a [grawlix][] pattern (default: `'@#$%!&?'`).
-Essentially, repeats `pattern` for `value` (when `number`) / `value.length`
+Essentially, repeats `pattern` for `value` (when `number`) or `value.length`
 (when `string`) characters.
 
 ## Related
