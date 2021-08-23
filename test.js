@@ -1,14 +1,14 @@
 import test from 'tape'
 import {vowel, inner, grawlix} from './index.js'
 
-test('fck', function (t) {
-  t.test('.vowel', function (t) {
+test('fck', (t) => {
+  t.test('.vowel', (t) => {
     t.equal(vowel('butt'), 'b*tt')
     t.equal(vowel('butt', '-'), 'b-tt')
     t.end()
   })
 
-  t.test('.inner', function (t) {
+  t.test('.inner', (t) => {
     t.equal(inner('butt'), 'b**t')
     t.equal(inner('butt', '-'), 'b--t')
     t.equal(inner('but'), 'b*t')
@@ -18,7 +18,7 @@ test('fck', function (t) {
     t.end()
   })
 
-  t.test('.grawlix', function (t) {
+  t.test('.grawlix', (t) => {
     t.equal(grawlix('butt'), '@#$%')
     t.equal(grawlix(4), '@#$%')
     t.equal(grawlix('buttb'), '@#$%!')

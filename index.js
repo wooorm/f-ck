@@ -38,7 +38,7 @@ export function inner(value, character) {
  * @returns {string}
  */
 export function grawlix(value, pattern = '@#$%!&?') {
-  var length = typeof value === 'number' ? value : value.length
+  const length = typeof value === 'number' ? value : value.length
   return (
     repeat(pattern, Math.floor(length / pattern.length)) +
     pattern.slice(0, length % pattern.length)
