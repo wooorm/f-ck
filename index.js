@@ -1,5 +1,3 @@
-import repeat from 'repeat-string'
-
 /**
  * `butt` > `b*tt`
  *
@@ -25,7 +23,7 @@ export function inner(value, character) {
 
   return (
     value.charAt(0) +
-    repeat(character || '*', value.length - 2) +
+    (character || '*').repeat(value.length - 2) +
     value.charAt(value.length - 1)
   )
 }
@@ -40,7 +38,7 @@ export function inner(value, character) {
 export function grawlix(value, pattern = '@#$%!&?') {
   const length = typeof value === 'number' ? value : value.length
   return (
-    repeat(pattern, Math.floor(length / pattern.length)) +
+    pattern.repeat(Math.floor(length / pattern.length)) +
     pattern.slice(0, length % pattern.length)
   )
 }
