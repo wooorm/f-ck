@@ -45,17 +45,17 @@ In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 npm install f-ck
 ```
 
-In Deno with [Skypack][]:
+In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import * as fck from 'https://cdn.skypack.dev/f-ck@2?dts'
+import * as fck from 'https://esm.sh/f-ck@2'
 ```
 
-In browsers with [Skypack][]:
+In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import * as fck from 'https://cdn.skypack.dev/f-ck@2?min'
+  import * as fck from 'https://esm.sh/f-ck@2?bundle'
 </script>
 ```
 
@@ -145,7 +145,7 @@ See [How to Contribute to Open Source][contribute].
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[skypack]: https://www.skypack.dev
+[esmsh]: https://esm.sh
 
 [license]: license
 
