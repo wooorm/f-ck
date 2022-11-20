@@ -39,7 +39,7 @@ at?
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
+In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install f-ck
@@ -74,7 +74,7 @@ console.log(vowel('butt', '-')) // => 'b-tt'
 
 ## API
 
-This package exports the following identifiers: `vowel`, `inner`, and `grawlix`.
+This package exports the identifiers `vowel`, `inner`, and `grawlix`.
 There is no default export.
 
 ### `vowel(value[, character])`
@@ -97,12 +97,12 @@ Essentially, repeats `pattern` for `value` (when `number`) or `value.length`
 ## Types
 
 This package is fully typed with [TypeScript][].
-There are no extra exported types.
+It exports no additional types.
 
 ## Compatibility
 
 This package is at least compatible with all maintained versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 It also works in Deno and modern browsers.
 
 ## Security
