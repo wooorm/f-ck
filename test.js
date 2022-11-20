@@ -1,39 +1,33 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {vowel, inner, grawlix} from './index.js'
 
-test('fck', (t) => {
-  t.test('.vowel', (t) => {
-    t.equal(vowel('butt'), 'b*tt')
-    t.equal(vowel('butt', '-'), 'b-tt')
-    t.end()
-  })
+test('.vowel', () => {
+  assert.equal(vowel('butt'), 'b*tt')
+  assert.equal(vowel('butt', '-'), 'b-tt')
+})
 
-  t.test('.inner', (t) => {
-    t.equal(inner('butt'), 'b**t')
-    t.equal(inner('butt', '-'), 'b--t')
-    t.equal(inner('but'), 'b*t')
-    t.equal(inner('bu'), 'bu')
-    t.equal(inner('b'), 'b')
-    t.equal(inner(''), '')
-    t.end()
-  })
+test('.inner', () => {
+  assert.equal(inner('butt'), 'b**t')
+  assert.equal(inner('butt', '-'), 'b--t')
+  assert.equal(inner('but'), 'b*t')
+  assert.equal(inner('bu'), 'bu')
+  assert.equal(inner('b'), 'b')
+  assert.equal(inner(''), '')
+})
 
-  t.test('.grawlix', (t) => {
-    t.equal(grawlix('butt'), '@#$%')
-    t.equal(grawlix(4), '@#$%')
-    t.equal(grawlix('buttb'), '@#$%!')
-    t.equal(grawlix('buttbu'), '@#$%!&')
-    t.equal(grawlix('buttbut'), '@#$%!&?')
-    t.equal(grawlix('buttbutt'), '@#$%!&?@')
-    t.equal(grawlix('buttbuttb'), '@#$%!&?@#')
-    t.equal(grawlix('but'), '@#$')
-    t.equal(grawlix('bu'), '@#')
-    t.equal(grawlix('b'), '@')
-    t.equal(grawlix(''), '')
-    t.equal(grawlix('butt', '*'), '****')
-    t.equal(grawlix('butt', '123'), '1231')
-    t.end()
-  })
-
-  t.end()
+test('.grawlix', () => {
+  assert.equal(grawlix('butt'), '@#$%')
+  assert.equal(grawlix(4), '@#$%')
+  assert.equal(grawlix('buttb'), '@#$%!')
+  assert.equal(grawlix('buttbu'), '@#$%!&')
+  assert.equal(grawlix('buttbut'), '@#$%!&?')
+  assert.equal(grawlix('buttbutt'), '@#$%!&?@')
+  assert.equal(grawlix('buttbuttb'), '@#$%!&?@#')
+  assert.equal(grawlix('but'), '@#$')
+  assert.equal(grawlix('bu'), '@#')
+  assert.equal(grawlix('b'), '@')
+  assert.equal(grawlix(''), '')
+  assert.equal(grawlix('butt', '*'), '****')
+  assert.equal(grawlix('butt', '123'), '1231')
 })
